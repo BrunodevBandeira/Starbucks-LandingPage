@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center{
@@ -13,7 +14,15 @@
     padding:0 2%;
 }
 
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
 header{
+    height: 200px;
     padding:20px 0;
 }
 
@@ -33,3 +42,32 @@ header{
     font-weight: bold;
     margin-right: 15px;
 }
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -700px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+.social-media{
+    position: absolute;
+    right: 510px;
+    top: 200px;
+}
+
+.social-media img{
+    display: block;
+    width: 30px;
+    margin: 10px 0;
+
+}
+
